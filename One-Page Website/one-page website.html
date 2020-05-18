@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+		<title>Secret Rooms</title>	
+		<link rel="stylesheet" type="text/css" href="./one page website.css">
+		<script src="./JS/one_page_website.js"></script> 
+	</head>
+		<h1>Secret Rooms</h1>
+	
+	<body>
+		<div>
+		<!--NAV-->
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#products"><li>PRODUCTS</li></a>
+					<a href="#contact"><li>CONTACT US</li></a>
+				</ul>
+			</div> 
+		</div>
+		<!--END NAV-->
+		
+		<!-- Images used to open the photo lightbox -->
+
+  <div class="row">
+	<div class="column">
+	  <img src="./images/Secret room bookcase.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/Secret room bookcase 3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/hidden-rooms.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+	</div>
+	<div class="column">
+	  <img src="./images/Fireplace.jfif" onclick="openModal();currentSlide(4)" class="hover-shadow">
+	</div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 4</div>
+		<img src="./images/Secret room bookcase.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 4</div>
+		<img src="./images/Secret room bookcase 3.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 4</div>
+		<img src="./images/hidden-rooms.png" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 4</div>
+		<img src="./images/Fireplace.jfif" style="width:100%">
+	  </div>
+  
+	  <!-- Next/previous controls -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- Caption text -->
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+  
+	  <!-- Thumbnail image controls -->
+	  <div class="column">
+		<img class="demo" src="./images/Secret room bookcase.jpg" onclick="currentSlide(1)" alt="Secret Bookcase 1">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/Secret room bookcase 3.jpg" onclick="currentSlide(2)" alt="Secret Bookcase 2">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/hidden-rooms.png" onclick="currentSlide(3)" alt="Secret Rooms">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/Fireplace.jfif" onclick="currentSlide(4)" alt="Secret Fireplace Door">
+	  </div>
+	</div>
+  </div>
+	
+		<!--Video-->
+		<section>
+		<p>
+			Have you ever wanted a secret door and/or room in your home?  Now it's possible.<br>
+			Watch the following video for examples.
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/1-L8W-WjVA8" 
+			frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+			allowfullscreen></iframe>
+		</p>
+		</section>
+		<!--END VIDEO>
+		
+		<!--CONTACT-->
+		<!--CONTACT US-->
+		<section>
+			<div id="contact">
+				<div>
+					<h1>CONTACT US</h1>
+					<div>
+						<h2><span>Contact us for questions and a free consultation!</span></h2>
+								
+						<p>
+							<em>Provide your info below and we'll be in touch!</em>
+						</p>
+						<div>
+							<form action="" method="post">
+								<input class="contact" type="text" value="First Name">
+								<input class="contact" type="text" value="Last Name">
+								<input class="contact" type="text" value="Email Address">
+								<input class="contact" type="text" value="Phone Number">
+								<input class="contact" type="text" value="How can we help?">
+								<div class="form-spacer">
+								</div>
+								<div>
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--END CONTACT US-->
+		
+		<!--FOOTER-->
+		<div>
+			www.secretrooms.com &nbsp;|&nbsp; &copy; 2020
+		</div>
+		<!--END FOOTER-->
+		
+	</body>	
+</html>
+		
+	
+	
