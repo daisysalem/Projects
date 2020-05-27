@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Daisy Salem</title>
+        <link rel="stylesheet" type="text/css" href="My Portfolio(2).css">
+        <script src="My Portfolio(2).js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>    
+    </head>
+
+<!--Body-->
+
+
+<body class="Background">
+
+<!-- Fade in effect -->
+<script> 
+    document.body.className += ' fade-out';
+        $(function()    {
+            $('body').removeClass('fade-out');
+        }
+    );
+
+</script>
+
+<!--Nav Bar-->
+    <div class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()">Contact</a> <!-- Form opens up when contact clicked -->
+    </div>
+
+<!-- Ability to close form when clicking outside of nav bar or contact form -->
+<div class="btn cancel" onclick="closeForm()"> 
+
+<!--Home-->
+    <div id="Home">
+        <br> <!--Spaces added between nav bar and first heading-->
+        <br>
+
+<!--Video-->    
+        <video autoplay muted loop id="worldvideo">
+            <source src="world video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video <!--Alt-->            
+        </video>
+    </div>
+
+<!--Video text-->
+    <div class="video_text">
+        <h1 style="color: white; font-family: "Engravers MT Bold", Arial;>Daisy Salem</h1>
+        <h3 style="color: white; margin-top: 0;">Full-Stack Junior Software Developer</h3>
+            <p>
+                <strong>
+                    </strong></p><center><strong>
+                    <br><br>
+                    <q>If your business isn't on the internet, 
+                    <br>then your business will be out of business.                    
+                    </q>
+                    - Bill Gates
+                    <br>
+                    <br>
+                    <br>
+                    <q>Websites promote you 24/7: No employee will do that.
+                    </q>
+                    -Paul Cookson
+                    <br>
+                    <br>
+                    <br>
+                    Daisy Salem can help you achieve both.
+                    </strong></center><strong>
+                </strong>
+            <p></p>
+    </div>
+
+
+
+<!-- About section -->
+    <div class="row" id="about">
+        <div class="column_2"> <!-- Left column -->
+            <!-- Slideshow section -->
+            <div id="Slideshow">
+                <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">1 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/Daisy.png" style="width:absolute">
+                        <div class="text">Daisy Salem, Full-Stack Software Developer</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">2 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/Javascript.png" style="width:relative">
+                        <div class="text">JavaScript, HTML, CSS</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">3 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/Python.png" style="width:relative">
+                        <div class="text">Python</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">4 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/C_sharp.png" style="width:relative">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">5 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/SQL.png" style="width:relative">
+                        <div class="text">Back-end development, databases, SQL</div>
+                        </div>
+
+                    <div class="mySlides fade">
+                    <div class="Slide_Number">6 / 6</div>
+                        <img class="Slide_Show_Images" src="./Images/Contact.jpg" style="width:relative">
+                        <div class="text"> 
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me. Let's see how I can help.</a>
+                        </div>
+                    </div>
+                
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+            <br>
+
+                <div style="text-align:center">
+            
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+
+                </div>
+                </div>
+            </div> 
+
+    <!-- We included our JS function within this file to ensure it was given precedence, this function covers the slideshow -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script> 
+            </div>
+
+        <div class="column_1"> <!-- Right column -->
+            <h1>About</h1>
+            <p>As a successful real estate broker for over 10 years, a 2-time recipient 
+of a National Salesperson of the Year award
+for the National Homebuilders Association, and consistent
+top producer for her former employer, Daisy Salem knows the power of 
+strong marketing and promotion. How you present yourself, your business, and your product
+can make the difference between blending in with your competition or rising above them.
+<br>
+<br>
+
+With her extensive background in sales and marketing, Daisy has taken
+her skills to the next level by becoming a web and software
+developer.  This powerful combination gives her the additional tools to help you and your 
+business stand out from the crowd in today's high-tech world.
+<br>
+<br>
+
+Daisy is a graduate of <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>’s 
+                Software Developer Boot Camp, and trained and experienced in the following web and programming languages: 
+                HTML, CSS, JavaScript, SQL, C# and more. 
+                <br><br>
+<a href="#contact">Contact</a> her today to see how she can help you grow your
+business.
+</p> 
+
+        </div>
+    </div>
+
+<!--GitHub section-->
+    <div class="row" id="GitHub">
+        <div class="column_1"> <!-- Left column -->
+            <h1>GitHub</h1>
+                <p>You can view my coding projects on my GitHub profile here:<br>
+                </p><center><a href="https://github.com/daisysalem/Projects" target="_blank">Daisy Salem - Projects</a></center><p></p>        
+        </div>
+        
+        <div class="column_2"> <!-- Right column -->
+            <a href="https://github.com/daisysalem/Projects" target="_blank"><img src="github2.png" alt="GitHub"></a>"
+        </div>
+    </div>
+</div>
+
+<!-- Contact section -->
+        <div id="Contact"> 
+            <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>		
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+        
+            <button type="submit" class="btn">SUBMIT</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+    
+    <!-- Footer section -->
+        <footer>
+            <p>
+                </p><center>&copy Prosper Consulting Inc., <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+            <p></p>
+        </footer>
+
+
+</body>
+
+</html>
