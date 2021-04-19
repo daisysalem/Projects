@@ -1,0 +1,1 @@
+Various projects I've done that include creating a calculator, building a mock one-page website for a company that installs bookcases which hide secret rooms.  This repository also includes the creation of my Portfolio website, daisysalem.net.
